@@ -35,7 +35,7 @@ $(document).ready(function() {
     });
 
     $('.owl-prev').on('click', function() {
-        if(nowProductNum <= 0)
+        if(nowProductNum - 1 < 0)
             nowProductNum = maxProductNum - 1;
         else 
             --nowProductNum;
@@ -48,7 +48,7 @@ $(document).ready(function() {
     });
 
     $('.owl-next').on('click', function() {
-        if(nowProductNum >= maxProductNum)
+        if(nowProductNum + 1 >= maxProductNum)
             nowProductNum = 0;
         else 
             ++nowProductNum;
