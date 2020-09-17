@@ -22,6 +22,24 @@ class ApiController extends Controller
         try {
             $companyRepository = new CompanyRepository();
             $result['data'] = $companyRepository->frontList($params);
+            foreach ($result['data'] as $i => $company) {
+                if(trim($result['data'][$i]->logo) != '')
+                    $result['data'][$i]->logo = "/uploads". $result['data'][$i]->logo;
+                if(trim($result['data'][$i]->logo2) != '')
+                    $result['data'][$i]->logo2 = "/uploads". $result['data'][$i]->logo2;
+                if(trim($result['data'][$i]->infoPath1) != '')
+                    $result['data'][$i]->infoPath1 = "/uploads". $result['data'][$i]->infoPath1;
+                if(trim($result['data'][$i]->infoPath2) != '')
+                    $result['data'][$i]->infoPath2 = "/uploads". $result['data'][$i]->infoPath2;
+                if(trim($result['data'][$i]->infoPath3) != '')
+                    $result['data'][$i]->infoPath3 = "/uploads". $result['data'][$i]->infoPath3;
+                if(trim($result['data'][$i]->infoPath4) != '')
+                    $result['data'][$i]->infoPath4 = "/uploads". $result['data'][$i]->infoPath4;
+                if(trim($result['data'][$i]->infoPath5) != '')
+                    $result['data'][$i]->infoPath5 = "/uploads". $result['data'][$i]->infoPath5;
+                if(trim($result['data'][$i]->companyRightInfo) != '')
+                    $result['data'][$i]->companyRightInfo = "/uploads". $result['data'][$i]->companyRightInfo;
+            }
         } catch(Exception $e) {
             $result = [
                 'result' => false,
@@ -45,7 +63,33 @@ class ApiController extends Controller
             $productRepository = new ProductRepository();
             $result['company'] = $companyRepository->getById($companyId);
             unset($result['company']->password);
+            if(trim($result['company']->logo) != '')
+                $result['company']->logo = "/uploads". $result['company']->logo;
+            if(trim($result['company']->logo2) != '')
+                $result['company']->logo2 = "/uploads". $result['company']->logo2;
+            if(trim($result['company']->infoPath1) != '')
+                $result['company']->infoPath1 = "/uploads". $result['company']->infoPath1;
+            if(trim($result['company']->infoPath2) != '')
+                $result['company']->infoPath2 = "/uploads". $result['company']->infoPath2;
+            if(trim($result['company']->infoPath3) != '')
+                $result['company']->infoPath3 = "/uploads". $result['company']->infoPath3;
+            if(trim($result['company']->infoPath4) != '')
+                $result['company']->infoPath4 = "/uploads". $result['company']->infoPath4;
+            if(trim($result['company']->infoPath5) != '')
+                $result['company']->infoPath5 = "/uploads". $result['company']->infoPath5;
+            if(trim($result['company']->companyRightInfo) != '')
+                $result['company']->companyRightInfo = "/uploads". $result['company']->companyRightInfo;
             $result['products'] = $productRepository->lists($params);
+            foreach($result['products'] as $j => $product) {
+                if(trim($result['products'][$j]->picture1) != '')
+                    $result['products'][$j]->picture1 = "/product". $result['products'][$j]->picture1;
+                if(trim($result['products'][$j]->picture2) != '')
+                    $result['products'][$j]->picture2 = "/product". $result['products'][$j]->picture2;
+                if(trim($result['products'][$j]->picture3) != '')
+                    $result['products'][$j]->picture3 = "/product". $result['products'][$j]->picture3;
+                if(trim($result['products'][$j]->dm) != '')
+                    $result['products'][$j]->dm = "/product". $result['products'][$j]->dm;
+            }
         } catch(Exception $e) {
             $result = [
                 'result' => false,
