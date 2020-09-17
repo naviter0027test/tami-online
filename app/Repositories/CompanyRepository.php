@@ -374,4 +374,27 @@ class CompanyRepository
         }
         return $companyAreas;
     }
+
+    public function frontList($params) {
+        $nowPage = isset($params['nowPage']) ? (int) $params['nowPage'] : 1;
+        $offset = isset($params['offset']) ? (int) $params['offset'] : 10;
+
+        $companyQuery = Company::orderBy('id', 'desc')
+            ->where('active', '=', 1)
+            ->skip(($nowPage-1) * $offset)
+            ->take($offset);
+        $companies = $companyQuery->get();
+        foreach($companies as $i => $company) {
+            switch($company->active) {
+            case 0:
+                $companies[$i]->activeShow = '否';
+                break;
+            case 1:
+                $companies[$i]->activeShow = '是';
+                break;
+            }
+            unset($companies[$i]->password);
+        }
+        return $companies;
+    }
 }

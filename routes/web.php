@@ -16,7 +16,8 @@ Route::get('/{lan}/', 'Front\FrontController@index');
 Route::get('/{lan}/front/company/{companyId}', 'Front\FrontController@company');
 Route::get('/{lan}/front/company/{companyId}/product', 'Front\FrontController@product');
 Route::post('/front/contact', 'Front\FrontController@contact');
-
+Route::get('/api/companys', 'Front\ApiController@companys');
+Route::get('/api/company/{companyId}', 'Front\ApiController@company');
 Route::get('/mail-test', 'Front\FrontController@mailTest');
 Route::get('/mmc-test', 'Front\FrontController@mmcTest');
 Route::post('/mmc-test', 'Front\FrontController@mmcProccess');
