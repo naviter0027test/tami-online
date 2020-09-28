@@ -15,9 +15,12 @@ class ApiController extends Controller
 {
     public function companys(Request $request) {
         $params = $request->all();
+        $watchAmount = env('WATCH_AMOUNT', 0);
+        $this->setEnvironmentValue(['WATCH_AMOUNT' => ++$watchAmount]);
         $result = [
             'result' => true,
             'msg' => 'success',
+            'visitorCount' => $watchAmount
         ];
         try {
             $companyRepository = new CompanyRepository();
@@ -46,7 +49,11 @@ class ApiController extends Controller
                 'msg' => $e->getMessage(),
             ];
         }
-        return json_encode($result);
+        return response(json_encode($result))
+            ->header('Access-Control-Allow-Credentials', 'true')
+            ->header('Access-Control-Allow-Origin', '*')
+            ->header('Access-Control-Allow-Methods', 'POST, GET, OPTINS')
+            ->header('Access-Control-Allow-Headers', 'X-Access-Token, X-Application-Name, X-Request-Sent-Time');
     }
 
     public function company(Request $request, $companyId = 0) {
@@ -96,6 +103,38 @@ class ApiController extends Controller
                 'msg' => $e->getMessage(),
             ];
         }
-        return json_encode($result);
+        return response(json_encode($result))
+            ->header('Access-Control-Allow-Credentials', 'true')
+            ->header('Access-Control-Allow-Origin', '*')
+            ->header('Access-Control-Allow-Methods', 'POST, GET, OPTINS')
+            ->header('Access-Control-Allow-Headers', 'X-Access-Token, X-Application-Name, X-Request-Sent-Time');
+    }
+
+    public function setEnvironmentValue(array $values) {
+        $envFile = app()->environmentFilePath();
+        $str = file_get_contents($envFile);
+
+        if (count($values) > 0) {
+            foreach ($values as $envKey => $envValue) {
+
+                $str .= "\n"; // In case the searched variable is in the last line without \n
+                $keyPosition = strpos($str, "{$envKey}=");
+                $endOfLinePosition = strpos($str, "\n", $keyPosition);
+                $oldLine = substr($str, $keyPosition, $endOfLinePosition - $keyPosition);
+
+                // If key does not exist, add it
+                if (!$keyPosition || !$endOfLinePosition || !$oldLine) {
+                    $str .= "{$envKey}={$envValue}\n";
+                } else {
+                    $str = str_replace($oldLine, "{$envKey}={$envValue}", $str);
+                }
+
+            }
+        }
+
+        $str = substr($str, 0, -1);
+        if (!file_put_contents($envFile, $str)) return false;
+        return true;
+
     }
 }
