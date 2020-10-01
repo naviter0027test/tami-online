@@ -12,9 +12,11 @@
         <div class="content">
             <h3>產品列表</h3>
             <div class="nav">
+<!--
                 <a href="/company/product/create" class="btn">
                     新增
                 </a>
+-->
             </div>
             <table class="table1">
                 <thead>
@@ -38,7 +40,9 @@
                         <td>{{ $product->updated_at }}</td>
                         <td>
                             <a href='/company/product/edit/{{ $product->id }}' class="glyphicon glyphicon-pencil"></a>
+<!--
                             <a href='/company/product/remove/{{ $product->id }}' class="glyphicon glyphicon-remove productRemove"></a>
+-->
                         </td>
                     </tr>
                 @endforeach
