@@ -55,13 +55,19 @@
 -->
                 <h5><span>亮點資訊</span></h5>
                 <p>
+<!--
                     <div id="info" ></div>
                     <input type="hidden" name="info" value="{{ $result['product']->info }}" />
+-->
+                    <textarea name="info">{{ $result['product']->info }}</textarea>
                 </p>
                 <h5><span>亮點資訊(英文)</span></h5>
                 <p>
+<!--
                     <div id="infoEn" ></div>
                     <input type="hidden" name="infoEn" value="{{ $result['product']->infoEn }}" />
+-->
+                    <textarea name="infoEn">{{ $result['product']->infoEn }}</textarea>
                 </p>
                 <h5><span>DM</span></h5>
                 @if($result['product']->dm != '')
