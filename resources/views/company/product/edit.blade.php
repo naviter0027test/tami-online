@@ -16,7 +16,7 @@
             @else
             <form method='post' action='/company/product/update/{{ $result['product']->id }}' class='form1' enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <h5><span>產品名稱</span></h5>
+                <h5><span>產品名稱(俄文)</span></h5>
                 <p> <input type="text" name="name" value="{{ $result['product']->name }}" /> </p>
                 <h5><span>產品名稱(英文)</span></h5>
                 <p> <input type="text" name="nameEn" value="{{ $result['product']->nameEn }}" /> </p>
@@ -53,7 +53,7 @@
                     更換如下:
                 <p> <input type="file" name="picture3" /> </p>
 -->
-                <h5><span>亮點資訊</span></h5>
+                <h5><span>亮點資訊(俄文)</span></h5>
                 <p>
 <!--
                     <div id="info" ></div>

@@ -17,10 +17,11 @@
                 <p> <input type="text" name="account" required /> </p>
                 <h5><span>密碼</span></h5>
                 <p> <input type="password" name="password" required /> </p>
-                <h5><span>廠商名稱</span></h5>
+                <h5><span>廠商名稱(俄文)</span></h5>
                 <p> <input type="text" name="name" /> </p>
                 <h5><span>廠商名稱(英文)</span></h5>
                 <p> <input type="text" name="nameEn" /> </p>
+<!--
                 <h5><span>Logo</span> </h5>
                 <p> <input type="file" name="logo" /> </p>
                 <h5><span>前台公司頁 Logo (建議寬高: 125x50)</span> </h5>
@@ -43,11 +44,11 @@
                     </select> 
                 </p>
             @endif
-                <h5><span>亮點資訊 標題</span></h5>
+                <h5><span>亮點資訊 標題(俄文)</span></h5>
                 <p> <input type="text" name="title" /> </p>
                 <h5><span>亮點資訊 標題(英文)</span></h5>
                 <p> <input type="text" name="titleEn" /> </p>
-                <h5><span>亮點資訊 描述</span></h5>
+                <h5><span>亮點資訊 描述(俄文)</span></h5>
                 <p> <textarea name="contactDesc" ></textarea> </p>
                 <h5><span>亮點資訊 描述(英文)</span></h5>
                 <p> <textarea name="contactDescEn" ></textarea> </p>
@@ -111,8 +112,10 @@
                 <p> <input type="text" name="contactLink2" /> </p>
                 <h5><span>聯絡方式 add</span></h5>
                 <p> <input type="text" name="contactLink3" /> </p>
+-->
                 <h5><span>官網網址 web</span></h5>
                 <p> <input type="text" name="contactLink4" /> </p>
+<!--
                 <h5><span>前台樣式</span></h5>
                 <p>
                     <img src="/" class="custPic frontModePic" /> <br />
@@ -125,6 +128,7 @@
                         <option value="6" >黃</option>
                     </select> 
                 </p>
+-->
                 <p class=""> <button class="btn">新增</button> </p>
             </form>
         </div>
