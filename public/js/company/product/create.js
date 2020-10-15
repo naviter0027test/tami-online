@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    /*
     var infoEditor;
     var infoEnEditor;
     ClassicEditor.create(document.querySelector( '#info'),{
@@ -31,6 +32,7 @@ $(document).ready(function() {
         $('[name=info]').val(infoEditor.getData());
         $('[name=infoEn]').val(infoEnEditor.getData());
     });
+    */
 
     $('.addEmail').on('click', function() {
         $(this).before('<input type="email" name="email[]" />');

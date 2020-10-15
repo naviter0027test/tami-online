@@ -27,8 +27,7 @@
                 @endforeach
                     <a href="#" class="addEmail"><i class="glyphicon glyphicon-add" >+</i></a>
                 </p>
-<!--
-                <h5><span>產品圖片</span></h5>
+                <h5><span>產品圖片1</span></h5>
                 @if($result['product']->picture1 != '')
                     <img src="/product{{ $result['product']->picture1 }}" class="custPic" /> <br />
                 @else
@@ -36,7 +35,7 @@
                 @endif
                     更換如下:
                 <p> <input type="file" name="picture1" /> </p>
-                <h5><span>產品左下圖片1</span></h5>
+                <h5><span>產品圖片2</span></h5>
                 @if($result['product']->picture2 != '')
                     <img src="/product{{ $result['product']->picture2 }}" class="custPic" /> <br />
                 @else
@@ -44,7 +43,7 @@
                 @endif
                     更換如下:
                 <p> <input type="file" name="picture2" /> </p>
-                <h5><span>產品左下圖片2</span></h5>
+                <h5><span>產品圖片3</span></h5>
                 @if($result['product']->picture3 != '')
                     <img src="/product{{ $result['product']->picture3 }}" class="custPic" /> <br />
                 @else
@@ -52,7 +51,6 @@
                 @endif
                     更換如下:
                 <p> <input type="file" name="picture3" /> </p>
--->
                 <h5><span>亮點資訊(俄文)</span></h5>
                 <p>
 <!--
@@ -77,15 +75,13 @@
                 @endif
                     更換如下:
                 <p> <input type="file" name="dm" /> </p>
-<!--
-                <h5><span>是否啟用</span></h5>
+                <h5><span>是否為第一個</span></h5>
                 <p> 
                     <select type="text" name="active"> 
                         <option value="1" {{ $result['product']->active == '1' ? 'selected="selected"' : '' }} >是</option>
                         <option value="0" {{ $result['product']->active == '0' ? 'selected="selected"' : '' }} >否</option>
                     </select> 
                 </p>
--->
                 <h5><span>影片(超連結，非內嵌)</span></h5>
                 <p> 
                     <input type="text" name="video" value="{{ $result['product']->video }}" /> 

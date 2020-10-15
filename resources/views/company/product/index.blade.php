@@ -12,18 +12,16 @@
         <div class="content">
             <h3>產品列表</h3>
             <div class="nav">
-<!--
-                <a href="/company/product/create" class="btn">
+                <a href="/company/product/create" class="btn create">
                     新增
                 </a>
--->
             </div>
             <table class="table1">
                 <thead>
                     <tr>
                         <td>id</td>
                         <td>產品名稱</td>
-                        <td>啟用</td>
+                        <td>是否為第一個</td>
                         <td>建立日期</td>
                         <td>修改日期</td>
                         <td>操作</td>
@@ -40,15 +38,14 @@
                         <td>{{ $product->updated_at }}</td>
                         <td>
                             <a href='/company/product/edit/{{ $product->id }}' class="glyphicon glyphicon-pencil"></a>
-<!--
                             <a href='/company/product/remove/{{ $product->id }}' class="glyphicon glyphicon-remove productRemove"></a>
--->
                         </td>
                     </tr>
                 @endforeach
                 @endif
                 </tbody>
             </table>
+            <input type="hidden" name="productAmount" value="{{ count($result['products']) }}" />
             <div class="pagination paginationCenter">
             @if(isset($result['amount']))
             @for($i = 0; $i < ceil($result['amount'] / $offset); ++$i)

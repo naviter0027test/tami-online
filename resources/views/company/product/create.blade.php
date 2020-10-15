@@ -22,37 +22,41 @@
                     <input type="email" name="email[]" />
                     <a href="#" class="addEmail"><i class="glyphicon glyphicon-add" >+</i></a>
                 </p>
-                <h5><span>產品圖片</span></h5>
+                <h5><span>產品圖片1</span></h5>
                 <p> <input type="file" name="picture1" /> </p>
-                <h5><span>產品左下圖片1</span></h5>
+                <h5><span>產品圖片2</span></h5>
                 <p> <input type="file" name="picture2" /> </p>
-                <h5><span>產品左下圖片2</span></h5>
+                <h5><span>產品圖片3</span></h5>
                 <p> <input type="file" name="picture3" /> </p>
                 <h5><span>亮點資訊</span></h5>
                 <p>
+<!--
                     <div id="info" ></div>
-                    <input type="hidden" name="info" />
+                    <input type="hidden" name="info" value="" />
+-->
+                    <textarea name="info"></textarea>
                 </p>
                 <h5><span>亮點資訊(英文)</span></h5>
                 <p>
+<!--
                     <div id="infoEn" ></div>
-                    <input type="hidden" name="infoEn" />
+                    <input type="hidden" name="infoEn" value="" />
+-->
+                    <textarea name="infoEn"></textarea>
                 </p>
                 <h5><span>DM</span></h5>
                 <p> <input type="file" name="dm" /> </p>
-                <h5><span>是否啟用</span></h5>
+                <h5><span>是否為第一個</span></h5>
                 <p> 
                     <select type="text" name="active"> 
                         <option value="1">是</option>
                         <option value="0">否</option>
                     </select> 
                 </p>
-<!--
                 <h5>影片(超連結，非內嵌)</h5>
                 <p> 
                     <input type="text" name="video" /> 
                 </p>
--->
                 <p class=""> <button class="btn">新增</button> </p>
             </form>
         </div>
