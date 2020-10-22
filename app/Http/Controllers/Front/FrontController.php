@@ -85,7 +85,7 @@ Malaysia International Plastic, Mould & Tools Exhibition will display products l
             }
             break;
         }
-        return view($frontDir. '.index', ['result' => $params]);
+        return view($frontDir. '.unity_index', ['result' => $params]);
     }
 
     public function company(Request $request, $lan = 'cn', $companyId) {
