@@ -10,7 +10,7 @@
     <script src="Build/UnityLoader.js"></script>
 	<input id="locationHref"/>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/web_.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/web.json", {onProgress: UnityProgress});
 		function clipboardWriteText(str)
 		{
 			var copyText = document.getElementById("locationHref");
