@@ -14,10 +14,15 @@
 		function clipboardWriteText(str)
 		{
 			var copyText = document.getElementById("locationHref");
-			copyText.value = str;
+			var lanauge = str.substr(0,2);
+			var url = str.substr(2);
+			copyText.value = url;
 			copyText.select();
 			document.execCommand("copy");
-			alert(str + "\n\nShare Link Success Copy");
+			if(lanauge=="EN")
+				alert(url + "\nThe sharing link has been successfully copied");
+			else if(lanauge=="RU")
+				alert(url + "\nСсылка для совместного использования успешно скопирована");
 		}
     </script>
   </head>
