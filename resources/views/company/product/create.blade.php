@@ -13,9 +13,9 @@
             <h3>產品 - 新增</h3>
             <form method='post' action='/company/product/create' class='form1' enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <h5><span>產品名稱</span></h5>
+                <h5><span>產品名稱(限定俄文)</span></h5>
                 <p> <input type="text" name="name" /> </p>
-                <h5><span>產品名稱(英文)</span></h5>
+                <h5><span>產品名稱(限定英文)</span></h5>
                 <p> <input type="text" name="nameEn" /> </p>
                 <h5><span>產品聯絡人E-Mail</span></h5>
                 <p>
@@ -30,7 +30,7 @@
                 <h5><span>產品圖片3</span></h5>
                 <p> <input type="file" name="picture3" /> </p>
 -->
-                <h5><span>亮點資訊</span></h5>
+                <h5><span>亮點資訊(限定俄文)</span></h5>
                 <p>
 <!--
                     <div id="info" ></div>
@@ -38,7 +38,7 @@
 -->
                     <textarea name="info"></textarea>
                 </p>
-                <h5><span>亮點資訊(英文)</span></h5>
+                <h5><span>亮點資訊(限定英文)</span></h5>
                 <p>
 <!--
                     <div id="infoEn" ></div>

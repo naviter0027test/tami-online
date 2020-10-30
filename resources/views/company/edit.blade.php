@@ -18,9 +18,9 @@
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                 <h5><span>帳號</span></h5>
                 <p> <input type="text" name="account" value="{{ $result['company']->account }}" readonly /> </p>
-                <h5><span>廠商名稱(俄文)</span></h5>
+                <h5><span>廠商名稱(限定俄文)</span></h5>
                 <p> <input type="text" name="name" value="{{ $result['company']->name }}" /> </p>
-                <h5><span>廠商名稱(英文)</span></h5>
+                <h5><span>廠商名稱(限定英文)</span></h5>
                 <p> <input type="text" name="nameEn" value="{{ $result['company']->nameEn }}" /> </p>
 <!--
                 <h5><span>Logo (建議寬高: 150x150)</span> </h5>

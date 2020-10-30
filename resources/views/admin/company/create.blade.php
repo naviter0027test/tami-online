@@ -17,9 +17,9 @@
                 <p> <input type="text" name="account" required /> </p>
                 <h5><span>密碼</span></h5>
                 <p> <input type="password" name="password" required /> </p>
-                <h5><span>廠商名稱(俄文)</span></h5>
+                <h5><span>廠商名稱(限定俄文)</span></h5>
                 <p> <input type="text" name="name" /> </p>
-                <h5><span>廠商名稱(英文)</span></h5>
+                <h5><span>廠商名稱(限定英文)</span></h5>
                 <p> <input type="text" name="nameEn" /> </p>
 <!--
                 <h5><span>Logo</span> </h5>
