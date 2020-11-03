@@ -12,7 +12,6 @@
 @include('company.layout.menu')
         <div class="content">
             <h3>首頁</h3>
-<!--
             <div class="col-lg-3 col-xs-6">
                 <div class="small-box bg-red">
                     <div class="inner">
@@ -45,7 +44,6 @@
                     <a href="/company/contact" class="small-box-footer">&nbsp;</a>
                 </div>
             </div>
--->
 <!--
             <h4 class="col-lg-12 col-xs-12">稱謂 統計</h4>
             <div class="flot-jobtitle" ></div>

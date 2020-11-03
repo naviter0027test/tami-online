@@ -24,10 +24,8 @@
         <a href="/company/product" class="{{ strpos(\Request::path(), 'company/product') === false ? '' : 'clicked' }} glyphicon glyphicon-star-empty">
         產品管理</a>
     </div>
-<!--
     <div class="menu1">
         <a href="/company/contact" class="{{ strpos(\Request::path(), 'company/contact') === false ? '' : 'clicked' }} glyphicon glyphicon-star-empty">
         聯絡管理</a>
     </div>
--->
 </div>
