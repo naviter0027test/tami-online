@@ -14,7 +14,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Taiwan Online Pavilion @Metalloobrabotka 2020</title>
+    <title>Taiwan Online Pavilion at Metalloobrobotka 2020</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
