@@ -225,4 +225,16 @@ class ContactRepository
         }
         return $industries;
     }
+
+    public function borrowMail($params) {
+        \Mail::send('email.borrowNotify', ['params' => $params], function($message) use ($params) {
+            $fromAddr = Config::get('mail.from.address');
+            $fromName = Config::get('mail.from.name');
+            $testTitle = env('APP_ENV') == 'local' ? '[Test] ' : '';
+            $mailTitle = $params['mailTitle'];
+            $appSmall = env('APP_SMALL');
+            $message->from($fromAddr, $fromName);
+            $message->to(trim($params['mailTo']), $params['companyName'])->subject("$testTitle <$appSmall $mailTitle 詢問信函>");
+        });
+    }
 }
