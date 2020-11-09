@@ -120,7 +120,6 @@ class ContactRepository
         if(isset($params['productId']) == false)
             throw new Exception('product no data');
 
-        \Log::info($params);
         $contact = new Contact();
         $contact->name = isset($params['name']) ? $params['name'] : '';
         $contact->companyName = isset($params['companyName']) ? $params['companyName'] : '';
