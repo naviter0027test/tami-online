@@ -234,7 +234,7 @@ class ContactRepository
             $mailTitle = $params['mailTitle'];
             $appSmall = env('APP_SMALL');
             $message->from($fromAddr, $fromName);
-            $message->to(trim($params['mailTo']), $params['companyName'])->subject("$testTitle <$appSmall $mailTitle 詢問信函>");
+            $message->to(trim($params['mailTo']), $params['companyName'])->subject("$mailTitle");
         });
     }
 }
