@@ -120,6 +120,7 @@ class ContactRepository
         if(isset($params['productId']) == false)
             throw new Exception('product no data');
 
+        \Log::info($params);
         $contact = new Contact();
         $contact->name = isset($params['name']) ? $params['name'] : '';
         $contact->companyName = isset($params['companyName']) ? $params['companyName'] : '';
@@ -150,9 +151,9 @@ class ContactRepository
             throw new Exception('please input contactId');
         if(isset($params['productId']) == false)
             throw new Exception('please input productId');
-        $company = Company::where('id', '=', $params['companyId'])
-            ->first();
         $product = Product::where('id', '=', $params['productId'])
+            ->first();
+        $company = Company::where('id', '=', $product->companyId)
             ->first();
         $emails = explode(',', $product->emailMulti);
         foreach($emails as $email)
