@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-	<meta name="title" content="2020年台灣鞋機拓銷越南及印尼線上台灣館">
-	<meta name="description" content=
-		"台灣鞋機全球市占率約7成，年產量世界第一，在國際鞋業產業鏈中扮演了相當重要的角色，主要出口至越南、印尼等國家。今年因應疫情無法出國參展，機械公會特別偕同40家台灣主要鞋機廠商，以線上展的形式，將最先進的台灣鞋機產品展現給越南及印尼的買主，內容將包括鞋面成型及鞋幫機、鞋底加工及橡塑膠製鞋設備、縫紉機及針織機、自動化設備與整廠規劃等產品。"
-	>
 	<meta name="title" content="Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia">
 	<meta name="description" content=
 		"Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
