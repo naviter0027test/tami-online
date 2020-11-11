@@ -126,9 +126,11 @@ class ContactRepository
         $contact->email = isset($params['email']) ? $params['email'] : '';
         $contact->phone = isset($params['phone']) ? $params['phone'] : '';
         $contact->content = isset($params['content']) ? $params['content'] : '';
-        $contact->companyId = isset($params['companyId']) ? $params['companyId'] : 0;
         $contact->productId = isset($params['productId']) ? $params['productId'] : 0;
         $contact->jobTitleId = isset($params['radio_position']) ? $params['radio_position'] : 0;
+        $product = Product::where('id', '=', $params['productId'])
+            ->first();
+        $contact->companyId = $product->companyId;
         $contact->save();
 
         if(isset($params['industryRelations']))
