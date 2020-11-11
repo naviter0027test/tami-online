@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-	<meta name="title" content="Taiwan Shoemaking Online Pavilion 2020 – Sole Provider for Vietnam and Indonesia">
+	<meta name="title" content="Taiwan Online Pavilion at Metalloobrobotka 2020">
 	<meta name="description" content=
-		"Taiwan shoemaking machinery plays a very important role in the global shoe industrial chain with the highest productivity and accounts for 70% global market share and exports mainly to Vietnam and Indonesia.
-		This year due to Covid-19, international exhibitions are cancelled. TAMI(Taiwan Association of Machinery Industry) organizes this online show with 40 Taiwan shoemaking machinery manufacturers instead, showing vietnamese and indonesian buyers the latest and most advanced Taiwan shoemaking machinery, including vamp making and lasting machinery,
-		sole process and rubber/plastic shoe making machinery, sewing machine & knitting machine, automatic equipment and turnkey solution, etc."
+		"Taiwan plays a very important role in Russian metal working field with its machine tool of good technology, quality, and price. Although the biggest metal working show in Russia, Metalloobrotka 2020, was postponed to 2021 due to COVID-19, TAMI bring Russian buyers with a special online show instead. You will get an interesting experience from this 720° full angle demonstration showroom. Chin Fong, Exact, Kenturn, Xtrauto, and Yida will present their products in live, vivid, real-time running 3D models. We invite you to click, observe and feel their products at any angle now."
+	>
+	<meta name="title" content="Тайваньский онлайн-павильон  металлообработке 2020">
+	<meta name="description" content=
+		"Тайвань с его технологичными, качественными станками по хорошей цене играет очень важную роль в российской металлообработке. И хотя крупнейшая выставка металлообработки в России "Металлообработка 2020" была перенесена на 2021 год из-за COVID-19, вместо этого TAMI предлагает российским заказчикам специальное онлайн-шоу. Вы получите интересный опыт от данного демонстрационного зала с полным углом обзора 720°. Chin Fong, Exact, Kenturn, Xtrauto и Yida представят свои продукты в живых, ярких 3D-моделях, работающих в режиме реального времени. Мы приглашаем вас перейти по ссылке прямо сейчас, рассмотреть и чувствовать их продукты под любым углом."
 	>
 
 	<!-- Google Tag Manager -->
