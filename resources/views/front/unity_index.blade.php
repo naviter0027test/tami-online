@@ -18,6 +18,16 @@
 	})(window,document,'script','dataLayer','GTM-WW4XHFF');</script>
 	<!-- End Google Tag Manager -->
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175242617-8"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-175242617-8');
+	</script>
+
+
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Taiwan Online Pavilion at Metalloobrobotka 2020</title>
@@ -28,7 +38,7 @@
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<input id="locationHref"/>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/web.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webR.json", {onProgress: UnityProgress});
 		function clipboardWriteText(str)
 		{
 			var copyText = document.getElementById("locationHref");
