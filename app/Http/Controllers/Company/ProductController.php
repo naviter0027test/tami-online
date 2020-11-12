@@ -140,4 +140,22 @@ class ProductController extends Controller
         }
         return view('company.proccessResult', ['company' => $company, 'result' => $result]);
     }
+
+    public function removePic(Request $request, $id, $pictureId) {
+        $company = Session::get('company');
+        $files = [];
+        $result = [
+            'result' => true,
+            'msg' => 'success',
+        ];
+
+        try {
+            $productRepository = new ProductRepository();
+            $productRepository->delPicByCompany($company->id, $id, $pictureId);
+        } catch (Exception $e) {
+            $result['result'] = false;
+            $result['msg'] = $e->getMessage();
+        }
+        return view('company.proccessResult', ['company' => $company, 'result' => $result]);
+    }
 }

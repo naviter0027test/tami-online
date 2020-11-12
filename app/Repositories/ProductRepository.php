@@ -2,6 +2,7 @@
 
 namespace App\Repositories;
 
+use Illuminate\Support\Facades\Storage;
 use App\Product;
 use Exception;
 
@@ -165,9 +166,26 @@ class ProductRepository
         $product = Product::where('id', '=', $id)
             ->first();
         if(isset($product->id) == false) {
-            throw new Exception('廠商不存在');
+            throw new Exception('產品不存在');
         }
         $product->delete();
+    }
+
+    public function delPicByCompany($companyId, $productId, $pictureId) {
+        $product = Product::where('id', '=', $productId)
+            ->first();
+        if(isset($product->id) == false) {
+            throw new Exception('產品不存在');
+        }
+        if($product->companyId != $companyId) {
+            throw new Exception('該產品非貴廠商所有');
+        }
+        $productPath = "picture$pictureId";
+        $filePath = $product->$productPath;
+        Storage::disk('product')->delete($filePath);
+
+        $product->$productPath = '';
+        $product->save();
     }
 
     public function getByCompanyId($companyId) {

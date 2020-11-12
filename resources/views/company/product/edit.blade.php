@@ -34,6 +34,9 @@
                     無<br />
                 @endif
                     更換如下:
+                @if($result['product']->picture1 != '')
+                (<a href="/company/product/remove/{{ $result['product']->id }}/pic/1">刪除</a>)
+                @endif
                 <p> <input type="file" name="picture1" /> </p>
 <!--
                 <h5><span>產品圖片2</span></h5>
