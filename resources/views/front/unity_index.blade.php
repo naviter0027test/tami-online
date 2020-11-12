@@ -38,7 +38,7 @@
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<input id="locationHref"/>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webR.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/web.json", {onProgress: UnityProgress});
 		function clipboardWriteText(str)
 		{
 			var copyText = document.getElementById("locationHref");
