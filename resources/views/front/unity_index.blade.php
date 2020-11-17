@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-	<meta name="title" content="Taiwan Online Pavilion at Metalloobrobotka 2020">
+	<meta name="title" content="Taiwan Online Pavilion at metalloobrabotka 2020">
 	<meta name="description" content=
 		"Taiwan plays a very important role in Russian metal working field with its machine tool of good technology, quality, and price. Although the biggest metal working show in Russia, Metalloobrotka 2020, was postponed to 2021 due to COVID-19, TAMI bring Russian buyers with a special online show instead. You will get an interesting experience from this 720° full angle demonstration showroom. Chin Fong, Exact, Kenturn, Xtrauto, and Yida will present their products in live, vivid, real-time running 3D models. We invite you to click, observe and feel their products at any angle now."
 	>
@@ -30,7 +30,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Taiwan Online Pavilion at Metalloobrobotka 2020</title>
+    <title>Taiwan Online Pavilion at metalloobrabotka 2020</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
