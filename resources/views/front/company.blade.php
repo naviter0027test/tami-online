@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <img src="/images/company_img001.jpg" class="infoPathImg">
                     -->
                     @if(trim($company->infoPath1) == '' && trim($company->infoPath2) == '')
-                    <img src="/images/company_img001.jpg" class="infoPathImg">
+                    <img src="" class="infoPathImg">
                     @elseif(trim($company->infoPath1) != '')
                     <img src="/uploads{{ $company->infoPath1 }}" class="infoPathImg">
                     @elseif(trim($company->infoPath2) != '')
