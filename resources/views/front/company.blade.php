@@ -56,7 +56,7 @@
                     <img src="/images/company_img001.jpg" class="infoPathImg">
                     -->
                     @if(trim($company->infoPath1) == '')
-                    <img src="/images/company_img001.jpg" class="infoPathImg">
+                    <img src="" class="infoPathImg">
                     @elseif(trim($company->infoPath1) != '')
                     <img src="/uploads{{ $company->infoPath1 }}" class="infoPathImg">
                     @endif
