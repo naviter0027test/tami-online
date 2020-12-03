@@ -1,9 +1,9 @@
 <?php
 return [
-    'commpany_area1' => '自动化设备与整厂规划',
-    'commpany_area2' => '鞋底加工及橡塑胶制鞋设备',
-    'commpany_area3' => '鞋面成型及鞋帮机',
-    'commpany_area4' => '缝纫机',
+    'commpany_area1' => '自動化設備與整廠規劃',
+    'commpany_area2' => '鞋底加工及橡塑膠製鞋設備',
+    'commpany_area3' => '鞋面成型及鞋幫機',
+    'commpany_area4' => '縫紉機及針織機',
     'browse_amount' => 'views',
     '2020' => '2 0 2 0 年',
     'international_shoes' => '台 灣 鞋 機 拓 銷',
