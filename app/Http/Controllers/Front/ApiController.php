@@ -8,6 +8,7 @@ use \App\Http\Controllers\Controller;
 use App\Repositories\CompanyRepository;
 use App\Repositories\ProductRepository;
 use App\Repositories\ContactRepository;
+use App\Repositories\SysConfigRepository;
 use Session;
 use Exception;
 
@@ -15,8 +16,9 @@ class ApiController extends Controller
 {
     public function companys(Request $request) {
         $params = $request->all();
-        $watchAmount = env('WATCH_AMOUNT', 0);
-        $this->setEnvironmentValue(['WATCH_AMOUNT' => ++$watchAmount]);
+        $sysConfigRepository = new SysConfigRepository();
+        $watchAmount = $sysConfigRepository->getWatchAmount();
+        $sysConfigRepository->setWatchAmount(++$watchAmount);
         $result = [
             'result' => true,
             'msg' => 'success',
