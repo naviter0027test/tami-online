@@ -3,7 +3,7 @@
   <head>
 	<meta name="title" content="Taiwan Online Pavilion at metalloobrabotka 2020">
 	<meta name="description" content=
-		"Taiwan plays a very important role in Russian metal working field with its machine tool of good technology, quality, and price. Although the biggest metal working show in Russia, Metalloobrotka 2020, was postponed to 2021 due to COVID-19, TAMI bring Russian buyers with a special online show instead. You will get an interesting experience from this 720° full angle demonstration showroom. Chin Fong, Exact, Kenturn, Xtrauto, and Yida will present their products in live, vivid, real-time running 3D models. We invite you to click, observe and feel their products at any angle now."
+		"Taiwan plays a very important role in Russian metal working field with its machine tool of good technology, quality, and price. Although the biggest metal working show in Russia, Metalloobrabotka 2020, was postponed to 2021 due to COVID-19, TAMI bring Russian buyers with a special online show instead. You will get an interesting experience from this 720° full angle demonstration showroom. Chin Fong, Exact, Kenturn, Xtrauto, and Yida will present their products in live, vivid, real-time running 3D models. We invite you to click, observe and feel their products at any angle now."
 	>
 	<meta name="title" content="Тайваньский онлайн-павильон  металлообработке 2020">
 	<meta name="description" content=
